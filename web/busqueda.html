@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda E-Commerce - Búsqueda</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Búsqueda de Productos</h2>
+        <p>Encuentra el producto que buscas ingresando palabras clave.</p>
+        
+        <form id="search-form" class="search-form">
+            <input type="text" id="search-input" placeholder="Ej. camisas, zapatos..." class="search-input">
+            <button type="submit" class="search-btn">Buscar</button>
+        </form>
+
+        <div class="mt-40">
+            <h3 id="search-results" class="search-results-title"></h3>
+            
+            <div id="fake-products" class="grid-container hidden">
+                <div class="product-card">
+                    <img src="../imgs/camisa.png" alt="Camisa Casual">
+                    <h4>Camisa Casual de Algodón</h4>
+                    <p>Precio: $35.00</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../imgs/zapatos.png" alt="Zapatos Deportivos">
+                    <h4>Zapatos Deportivos Running</h4>
+                    <p>Precio: $60.00</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+                
+                <div class="product-card">
+                    <img src="../imgs/jeans.png" alt="Pantalón Jeans">
+                    <h4>Pantalón Jeans Clásico</h4>
+                    <p>Precio: $45.00</p>
+                    <button class="add-to-cart-btn">Agregar al carrito</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>

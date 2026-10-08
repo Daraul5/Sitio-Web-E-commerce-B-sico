@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda E-Commerce - Carrito</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="registro.html">Registro</a></li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="catalogo.html">Catálogo</a></li>
+                <li><a href="carrito.html">Carrito</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Carrito de Compra</h2>
+        <p>Revisa los artículos que has seleccionado antes de procesar el pago.</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Imagen</th>
+                    <th>Producto</th>
+                    <th>Precio Unitario</th>
+                    <th>Cantidad</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="text-center"><img src="../imgs/smartphone-small.png" alt="Teléfono"></td>
+                    <td>Smartphone XYZ</td>
+                    <td>$499.00</td>
+                    <td><input type="number" min="0" value="1" class="cart-qty" data-price="499.00"></td>
+                </tr>
+                <tr>
+                    <td class="text-center"><img src="../imgs/auriculares-small.png" alt="Auriculares"></td>
+                    <td>Auriculares Inalámbricos</td>
+                    <td>$89.00</td>
+                    <td><input type="number" min="0" value="2" class="cart-qty" data-price="89.00"></td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="cart-total-container">
+            <h3 class="cart-total-title">Total a Pagar: $<span id="cart-total">677.00</span></h3>
+            <button class="btn-success">Proceder al Pago</button>
+        </div>
+    </main>
+
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
